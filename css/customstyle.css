@@ -1,0 +1,13 @@
+.thu-anh {
+    width: 80%;
+}
+
+.khung-ngan-cach {
+    border-right: 1px solid black;
+}
+
+.khung-noi-dung {
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
