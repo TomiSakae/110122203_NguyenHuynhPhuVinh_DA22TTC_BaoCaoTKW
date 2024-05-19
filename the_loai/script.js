@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
                         document.getElementById("pl").style.display = "none";
                         document.getElementById("pl").style.opacity = 0;
                         break;
+                    case "nut-3":
+                        document.getElementById("st").style.display = "none";
+                        document.getElementById("st").style.opacity = 0;
+                        break;
                 }
                 if (ten_class != "") {
                     const nut_ve = document.querySelector("." + ten_class);
@@ -53,6 +57,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
                             tl
                                 .to("#pl", { "display": "block", y: -25, duration: 0 })
                                 .to("#pl", { "opacity": "1", y: 0, duration: 1 });
+                            break;
+                        case "nut-3":
+                            tl
+                                .to("#st", { "display": "block", y: -25, duration: 0 })
+                                .to("#st", { "opacity": "1", y: 0, duration: 1 });
                             break;
                     }
                     gsap.to("#nut-xt", {

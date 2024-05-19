@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/customstyle.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,24 +31,28 @@
         </div>
     </nav>
     <!-- Page content-->
-    <div class="container mt-5">
-        <!-- Post content-->
-        <article>
-            <!-- Post header-->
-            <header class="mb-4">
-                <!-- Post title-->
-                <h1 class="fw-bolder mb-1">Zenless Zone Zero</h1>
-                <!-- Post meta content-->
-                <div class="text-muted fst-italic mb-2">Ngày 10 Tháng 4 Năm 2024</div>
-                <!-- Post categories-->
-                <a class="badge bg-secondary text-decoration-none link-light" href="#">Nhập Vai</a>
-                <a class="badge bg-secondary text-decoration-none link-light" href="#">Thế Giới Mở</a>
-            </header>
-            <!-- Preview image figure-->
-            <figure class="mb-4 d-flex justify-content-center"><img class="img-fluid rounded"
-                    src="../assets/nen_post_zenless_zone_zero.jpg" alt="..." /></figure>
+    <div id="container">
+        <section class="container mt-5 khung-post bo-goc-khung-thuong bg-white py-3 hinh1">
             <!-- Post content-->
-            <section class="mb-5">
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Zenless Zone Zero</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Ngày 10 Tháng 4 Năm 2024</div>
+                    <!-- Post categories-->
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#">Nhập Vai</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#">Thế Giới Mở</a>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4 text-center"><img class="img-fluid rounded gioi-han-anh"
+                        src="../assets/nen_post_zenless_zone_zero.jpg" alt="..." /></figure>
+            </article>
+            <!-- Post content-->
+        </section>
+        <section class="container mt-5 khung-post bo-goc-khung-noi bg-white py-3 mb-3 hinh2">
+            <article>
                 <p class="fs-5 mb-4">Zenless Zone Zero là một trò chơi nhập vai hành động (ARPG) giả tưởng cuốn
                     hút, nền đồ họa được xây dựng theo phong cách anime đặc trưng. Trò chơi được đặt trong một
                     thế giới giả tưởng hậu tận thế, nơi người chơi sẽ nhập vai một Proxy - hay "hướng dẫn viên"
@@ -58,19 +63,10 @@
                     ra mắt vào năm 2024 qua đoạn trailer trình chiếu tại TGA 2023, nhưng thời điểm chính xác tạm
                     thời vẫn chưa được hé lộ.
                 </p>
-            </section>
-        </article>
-        <!-- Comments section-->
-        <section class="mb-5">
-            <div class="card bg-light">
-                <div class="card-body">
-                    <!-- Comment form-->
-                    <form class="mb-4"><textarea class="form-control" rows="3"
-                            placeholder="Tham gia cùng chúng tôi để nhập bình luận!"></textarea></form>
-                </div>
-            </div>
+            </article>
         </section>
     </div>
+    <!-- Comments section-->
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
@@ -79,9 +75,13 @@
         </div>
     </footer>
     <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="../js/scripts.js"></script>
+    <script src="../js/gsap.js"></script>
 </body>
 
 </html>
