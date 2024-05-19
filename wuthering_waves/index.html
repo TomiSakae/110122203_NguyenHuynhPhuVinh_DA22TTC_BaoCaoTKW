@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/customstyle.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,24 +31,29 @@
         </div>
     </nav>
     <!-- Page content-->
-    <div class="container mt-5">
-        <!-- Post content-->
-        <article>
-            <!-- Post header-->
-            <header class="mb-4">
-                <!-- Post title-->
-                <h1 class="fw-bolder mb-1">Wuthering Waves</h1>
-                <!-- Post meta content-->
-                <div class="text-muted fst-italic mb-2">Ngày 16 Tháng 4 Năm 2024</div>
-                <!-- Post categories-->
-                <a class="badge bg-secondary text-decoration-none link-light" href="#">Nhập Vai</a>
-                <a class="badge bg-secondary text-decoration-none link-light" href="#">Thế Giới Mở</a>
-            </header>
-            <!-- Preview image figure-->
-            <figure class="mb-4"><img class="img-fluid rounded" src="../assets/nen_post_wuthering_waves.jpg"
-                    alt="..." /></figure>
+    <div id="container">
+        <section class="container mt-5 khung-post bo-goc-khung-thuong bg-white py-3 hinh1">
             <!-- Post content-->
-            <section class="mb-5">
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Wuthering Waves</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Ngày 16 Tháng 4 Năm 2024</div>
+                    <!-- Post categories-->
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#">Nhập Vai</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#">Thế Giới Mở</a>
+                </header>
+                <!-- Preview image figure-->
+                <figure id="h1-content" class="mb-4 text-center"><img class="img-fluid rounded gioi-han-anh"
+                        src="../assets/nen_post_wuthering_waves.jpg" alt="..." /></figure>
+                <!-- Post content-->
+            </article>
+        </section>
+        <section class="container mt-5 khung-post bo-goc-khung-noi bg-white py-3 mb-3 hinh2">
+            <!-- Post content-->
+            <article>
                 <p class="fs-5 mb-4">Nếu bạn đang tìm kiếm một game nhập vai hành động với một thế giới ngoạn
                     mục, các nhân vật dễ hiểu và lối chơi hấp dẫn thì Wuthering Waves là tựa game không thể bỏ
                     qua.</p>
@@ -64,30 +70,24 @@
                 <p class="fs-5 mb-4">Người chơi cũng có thể chuyển đổi giữa các nhân vật khác, được gọi là
                     Resonators ngay cả trong trận chiến. Bạn có thể điều khiển một nhóm Resonators, mỗi nhóm sẽ
                     có kỹ năng nguyên tố và vũ khí đặc biệt riêng.</p>
-            </section>
-        </article>
-        <!-- Comments section-->
-        <section class="mb-5">
-            <div class="card bg-light">
-                <div class="card-body">
-                    <!-- Comment form-->
-                    <form class="mb-4"><textarea class="form-control" rows="3"
-                            placeholder="Tham gia cùng chúng tôi để nhập bình luận!"></textarea></form>
-                </div>
-            </div>
+            </article>
         </section>
     </div>
     <!-- Side widgets-->
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer id="chan-trang-post" class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Review Games NHPV 2023</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="../js/scripts.js"></script>
+    <script src="gsap.js"></script>
 </body>
 
 </html>

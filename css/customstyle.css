@@ -11,3 +11,46 @@
     border-radius: 25px;
     cursor: pointer;
 }
+
+.khung-post {
+    border: 1px solid black;
+    height: 80vh;
+}
+
+.bo-goc-khung-thuong {
+    border-radius: 10px;
+}
+
+.bo-goc-khung-noi {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.gioi-han-anh {
+    height: 55vh;
+    width: auto;
+}
+
+.hinh1 {
+    position: absolute;
+    top: 20px;
+    left: 105px;
+    z-index: 100;
+}
+
+.hinh2 {
+    position: absolute;
+    top: 20px;
+    left: 105px;
+    z-index: 101;
+}
+
+#container {
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 125vh;
+}
