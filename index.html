@@ -18,7 +18,7 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="assets/logo.png" class="navbar-brand logo" href="#">
+            <img src="assets/logo.gif" class="navbar-brand logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -45,7 +45,7 @@
             <!-- Blog entries-->
             <div class="col-lg-8">
                 <!-- Featured blog post-->
-                <div class="card mb-4 animate__animated animate__fadeInDown">
+                <div id="r1" class="card mb-4 animate__animated animate__fadeInDown">
                     <a href="wuthering_waves/index.html"><img class="card-img-top" src="assets/nen_wuthering_waves.jpg"
                             alt="..." /></a>
                     <div class="card-body">
@@ -58,11 +58,11 @@
                     </div>
                 </div>
                 <!-- Nested row for non-featured blog posts-->
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <div class="row">
                         <div class="col-lg-6">
                             <!-- Blog post-->
-                            <div class="card mb-4 animate__animated animate__fadeInDown">
+                            <div id="r2" class="card mb-4 animate__animated animate__fadeInDown2">
                                 <a href="azur_promilia/index.html"><img class="card-img-top"
                                         src="assets/nen_azur_promilia.gif" alt="..." /></a>
                                 <div class="card-body">
@@ -82,7 +82,7 @@
                         </div>
                         <!-- Blog post-->
                         <div class="col-lg-6">
-                            <div class="card mb-4 animate__animated animate__fadeInDown">
+                            <div id="r3" class="card mb-4 animate__animated animate__fadeInDown2">
                                 <a href="arknights_endfield/index.html"><img class="card-img-top"
                                         src="assets/nen_arknights_endfield.jpg" alt="..." /></a>
                                 <div class="card-body">
@@ -104,7 +104,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <!-- Blog post-->
-                            <div class="card mb-4 animate__animated animate__fadeInDown">
+                            <div id="r4" class="card mb-4 animate__animated animate__fadeInDown2">
                                 <a href="project_mugen/index.html"><img class="card-img-top"
                                         src="assets/nen_project_mugen.gif" alt="..." /></a>
                                 <div class="card-body">
@@ -122,7 +122,7 @@
                         </div>
                         <!-- Blog post-->
                         <div class="col-lg-6">
-                            <div class="card mb-4 animate__animated animate__fadeInDown">
+                            <div id="r5" class="card mb-4 animate__animated animate__fadeInDown2">
                                 <a href="zenless_zone_zero/index.html"><img class="card-img-top"
                                         src="assets/nen_zenless_zone_zero.jpg" alt="..." /></a>
                                 <div class="card-body">
@@ -232,20 +232,22 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <!-- Search widget-->
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Tìm Kiếm</div>
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal"
-                            data-bs-target="#tim_kiem">Mở hộp tìm kiếm</button>
-                        <a href="the_loai/index.html" class="btn btn-outline-primary mx-3">Tìm theo thể loại</a>
+                <div class="dinh">
+                    <!-- Search widget-->
+                    <div class="dinh card mb-4 animate__animated animate__lightSpeedInRight">
+                        <div class="card-header">Tìm Kiếm</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal"
+                                data-bs-target="#tim_kiem">Mở hộp tìm kiếm</button>
+                            <a href="the_loai/index.html" class="btn btn-outline-primary mx-3">Tìm theo thể loại</a>
+                        </div>
                     </div>
-                </div>
-                <!-- Categories widget-->
-                <!-- Side widget-->
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Test</div>
-                    <div class="card-body">...</div>
+                    <!-- Categories widget-->
+                    <!-- Side widget-->
+                    <div class="card mb-4 animate__animated animate__lightSpeedInRight">
+                        <div class="card-header">Test</div>
+                        <div class="card-body">...</div>
+                    </div>
                 </div>
             </div>
         </div>
