@@ -4,6 +4,12 @@
     cursor: pointer;
 }
 
+.gacha {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+
 .thong-tin-roll {
     max-height: 300px;
     overflow: auto;
