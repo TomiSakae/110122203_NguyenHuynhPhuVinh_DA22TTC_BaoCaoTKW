@@ -17,6 +17,15 @@
     border-radius: 5px;
 }
 
+.khung-gacha-4 {
+    border-color: orangered;
+}
+
+.khung-gacha-5 {
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-width: 2px;
+}
+
 .thong-tin-roll {
     max-height: 300px;
     overflow: auto;
