@@ -4,6 +4,11 @@
     cursor: pointer;
 }
 
+.thong-tin-roll {
+    max-height: 300px;
+    overflow: auto;
+}
+
 /* .dinh {
     position: sticky;
     top: 25px;
