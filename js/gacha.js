@@ -42,7 +42,6 @@ switch (vi_tri_url) {
 document.getElementById("so_gacha").textContent = gacha;
 
 function KTGacha(so_lan) {
-    console.log(so_lan);
     if (gacha >= so_lan) {
         gacha -= so_lan;
         localStorage.setItem("gacha", gacha);
