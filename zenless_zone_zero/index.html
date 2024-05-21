@@ -8,49 +8,21 @@
     <meta name="author" content="" />
     <title>Review Games Zenless Zone Zero</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
-    <link href="../css/customstyle.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    <div class="modal fade" id="vp_gacha">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Túi Đồ</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Túi đồ đang rỗng!
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img id="logo" src="../assets/logo.gif" class="navbar-brand logo">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" class="w-25 h-auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-felx justify-content-center align-items-center">
-                    <li class="nav-item"><a class="nav-link">
-                            <div class="rounded bg-light d-flex px-2"><img src="../assets/gacha.png" class="gacha my-2">
-                                <p class="text-black my-2 mx-1">x</p>
-                                <p id="so_gacha" class="text-black my-2 mx-1"></p>
-                            </div>
-                        </a></li>
-                    <li class="nav-item"><a class="btn btn-outline-primary mx-2" href="#" data-bs-toggle="modal"
-                            data-bs-target="#vp_gacha">Túi Đồ</a></li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="../tham_gia/index.html">Tham Gia</a></li>
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Review</a></li>
                 </ul>
@@ -58,28 +30,24 @@
         </div>
     </nav>
     <!-- Page content-->
-    <div id="container">
-        <section class="container mt-5 khung-post bo-goc-khung-thuong bg-white py-3 hinh1">
+    <div class="container mt-5">
+        <!-- Post content-->
+        <article>
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">Zenless Zone Zero</h1>
+                <!-- Post meta content-->
+                <div class="text-muted fst-italic mb-2">Ngày 10 Tháng 4 Năm 2024</div>
+                <!-- Post categories-->
+                <a class="badge bg-secondary text-decoration-none link-light" href="#">Nhập Vai</a>
+                <a class="badge bg-secondary text-decoration-none link-light" href="#">Thế Giới Mở</a>
+            </header>
+            <!-- Preview image figure-->
+            <figure class="mb-4 d-flex justify-content-center"><img class="img-fluid rounded"
+                    src="../assets/nen_post_zenless_zone_zero.jpg" alt="..." /></figure>
             <!-- Post content-->
-            <article>
-                <!-- Post header-->
-                <header class="mb-4">
-                    <!-- Post title-->
-                    <h1 class="fw-bolder mb-1">Zenless Zone Zero</h1>
-                    <!-- Post meta content-->
-                    <div class="text-muted fst-italic mb-2">Ngày 10 Tháng 4 Năm 2024</div>
-                    <!-- Post categories-->
-                    <a class="badge bg-secondary text-decoration-none link-light" href="#">Nhập Vai</a>
-                    <a class="badge bg-secondary text-decoration-none link-light" href="#">Thế Giới Mở</a>
-                </header>
-                <!-- Preview image figure-->
-                <figure class="mb-4 text-center"><img class="img-fluid rounded gioi-han-anh"
-                        src="../assets/nen_post_zenless_zone_zero.jpg" alt="..." /></figure>
-            </article>
-            <!-- Post content-->
-        </section>
-        <section class="container mt-5 khung-post bo-goc-khung-noi bg-white py-3 mb-3 hinh2">
-            <article>
+            <section class="mb-5">
                 <p class="fs-5 mb-4">Zenless Zone Zero là một trò chơi nhập vai hành động (ARPG) giả tưởng cuốn
                     hút, nền đồ họa được xây dựng theo phong cách anime đặc trưng. Trò chơi được đặt trong một
                     thế giới giả tưởng hậu tận thế, nơi người chơi sẽ nhập vai một Proxy - hay "hướng dẫn viên"
@@ -90,10 +58,19 @@
                     ra mắt vào năm 2024 qua đoạn trailer trình chiếu tại TGA 2023, nhưng thời điểm chính xác tạm
                     thời vẫn chưa được hé lộ.
                 </p>
-            </article>
+            </section>
+        </article>
+        <!-- Comments section-->
+        <section class="mb-5">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <!-- Comment form-->
+                    <form class="mb-4"><textarea class="form-control" rows="3"
+                            placeholder="Tham gia cùng chúng tôi để nhập bình luận!"></textarea></form>
+                </div>
+            </div>
         </section>
     </div>
-    <!-- Comments section-->
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
@@ -102,15 +79,9 @@
         </div>
     </footer>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="../js/gsap.js"></script>
-    <script src="../js/chuyen_huong.js"></script>
-    <script src="../js/gacha.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>

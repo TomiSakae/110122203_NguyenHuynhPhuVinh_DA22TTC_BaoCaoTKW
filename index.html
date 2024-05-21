@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Review Games</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/customstyle.css" rel="stylesheet" />
@@ -16,68 +16,14 @@
 
 <body>
     <!-- Responsive navbar-->
-
-    <!-- The Modal -->
-    <div class="modal fade" id="vp_gacha">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Túi Đồ</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Túi đồ đang rỗng!
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="gacha">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Gacha!</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div id="noi_gacha" class="modal-body d-flex flex-column">
-                    <div class="d-flex align-items-center">
-                        <div class="khung-gacha py-1 px-1">
-
-                        </div>
-                        <p class="mt-3 mx-4"></p>
-                    </div>
-                    <hr>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="assets/logo.gif" class="navbar-brand logo">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" class="w-25 h-auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-felx justify-content-center align-items-center">
-                    <li class="nav-item"><a class="nav-link">
-                            <div class="rounded bg-light d-flex px-2"><img src="assets/gacha.png" class="gacha my-2">
-                                <p class="text-black my-2 mx-1">x</p>
-                                <p id="so_gacha" class="text-black my-2 mx-1"></p>
-                            </div>
-                        </a></li>
-                    <li class="nav-item"><a class="btn btn-outline-primary mx-2" href="#" data-bs-toggle="modal"
-                            data-bs-target="#vp_gacha">Túi Đồ</a></li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="tham_gia/index.html">Tham Gia</a></li>
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Review</a></li>
                 </ul>
@@ -85,38 +31,11 @@
         </div>
     </nav>
     <!-- Page header with logo and tagline-->
-    <header class="py-3 bg-light border-bottom mb-4 animate__animated animate__fadeInDown">
+    <header class="py-5 bg-light border-bottom mb-4">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 my-1">
-                    <img src="assets/banner.jpg" class="w-100 h-auto">
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                        <div class="card-header">Danh sách vật phẩm Gacha:</div>
-                        <div class="card-body thong-tin-roll">
-                            <h6>Vật phẩm 5 sao: 6%</h6>
-                            <p>Ảnh nền chuột: Emilia x1: 6%</p>
-                            <hr>
-                            <h6>Vật phẩm 4 sao: 24%</h6>
-                            <p>Ảnh nền chuột: Megumin x1: 12%</p>
-                            <p>Ảnh nền chuột: Kanna x1: 12%</p>
-                            <hr>
-                            <h6>Vật phẩm 3 sao: 70%</h6>
-                            <p>Chìa khóa vàng x1: 20%</p>
-                            <p>Chìa khóa bạc x1: 50%</p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" onclick="KTGacha(1)" class="btn btn-outline-primary mx-3 pe-3"
-                            data-bs-toggle="modal" data-bs-target="#gacha"><img src="assets/gacha.png"
-                                class="gacha mx-1 mb-1">
-                            x1</button>
-                        <button type="button" onclick="KTGacha(10)" class="btn btn-outline-primary mx-3 pe-3"
-                            data-bs-toggle="modal" data-bs-target="#gacha"><img src="assets/gacha.png"
-                                class="gacha mx-1 mb-1"> x10</button>
-                    </div>
-                </div>
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Trang Chủ Review</h1>
+                <p class="lead mb-0">Đây là trang web review về các tựa game mới nổi hiện nay!</p>
             </div>
         </div>
     </header>
@@ -126,7 +45,7 @@
             <!-- Blog entries-->
             <div class="col-lg-8">
                 <!-- Featured blog post-->
-                <div id="r1" class="card mb-4 animate__animated animate__fadeInDown">
+                <div class="card mb-4">
                     <a href="wuthering_waves/index.html"><img class="card-img-top" src="assets/nen_wuthering_waves.jpg"
                             alt="..." /></a>
                     <div class="card-body">
@@ -139,13 +58,13 @@
                     </div>
                 </div>
                 <!-- Nested row for non-featured blog posts-->
-                <div class="row d-flex justify-content-center">
+                <div class="row">
                     <div class="row">
                         <div class="col-lg-6">
                             <!-- Blog post-->
-                            <div id="r2" class="card mb-4 animate__animated animate__fadeInDown2">
+                            <div class="card mb-4">
                                 <a href="azur_promilia/index.html"><img class="card-img-top"
-                                        src="assets/nen_azur_promilia.gif" alt="..." /></a>
+                                        src="assets/nen_azur_promilia.jpg" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">Ngày 14 Tháng 4 Năm 2024</div>
                                     <h2 class="card-title h4">Azur Promilia</h2>
@@ -163,7 +82,7 @@
                         </div>
                         <!-- Blog post-->
                         <div class="col-lg-6">
-                            <div id="r3" class="card mb-4 animate__animated animate__fadeInDown2">
+                            <div class="card mb-4">
                                 <a href="arknights_endfield/index.html"><img class="card-img-top"
                                         src="assets/nen_arknights_endfield.jpg" alt="..." /></a>
                                 <div class="card-body">
@@ -185,9 +104,9 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <!-- Blog post-->
-                            <div id="r4" class="card mb-4 animate__animated animate__fadeInDown2">
+                            <div class="card mb-4">
                                 <a href="project_mugen/index.html"><img class="card-img-top"
-                                        src="assets/nen_project_mugen.gif" alt="..." /></a>
+                                        src="assets/nen_project_mugen.jpg" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">Ngày 11 Tháng 4 Năm 2024</div>
                                     <h2 class="card-title h4">Project Mugen</h2>
@@ -203,7 +122,7 @@
                         </div>
                         <!-- Blog post-->
                         <div class="col-lg-6">
-                            <div id="r5" class="card mb-4 animate__animated animate__fadeInDown2">
+                            <div class="card mb-4">
                                 <a href="zenless_zone_zero/index.html"><img class="card-img-top"
                                         src="assets/nen_zenless_zone_zero.jpg" alt="..." /></a>
                                 <div class="card-body">
@@ -233,6 +152,8 @@
                         <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
                         <li class="page-item"><a class="page-link" href="#!">2</a></li>
                         <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">15</a></li>
                         <li class="page-item"><a class="page-link" href="#!">Trang sau</a></li>
                     </ul>
                 </nav>
@@ -266,7 +187,7 @@
                                 <div id="ap" class="khung-noi-dung py-2 px-2 my-2 d-none">
                                     <div class="row">
                                         <div class="col-5 khung-ngan-cach text-center">
-                                            <img src="assets/nen_azur_promilia.gif" class="thu-anh h-auto">
+                                            <img src="assets/nen_azur_promilia.jpg" class="thu-anh h-auto">
                                         </div>
                                         <div class="col-7">
                                             <p class="text-muted">Ngày 14 Tháng 4 Năm 2024</p>
@@ -288,7 +209,7 @@
                                 <div id="pm" class="khung-noi-dung py-2 px-2 my-2 d-none">
                                     <div class="row">
                                         <div class="col-5 khung-ngan-cach text-center">
-                                            <img src="assets/nen_project_mugen.gif" class="thu-anh h-auto">
+                                            <img src="assets/nen_project_mugen.jpg" class="thu-anh h-auto">
                                         </div>
                                         <div class="col-7">
                                             <p class="text-muted">Ngày 11 Tháng 4 Năm 2024</p>
@@ -314,7 +235,7 @@
             </div>
             <div class="col-lg-4">
                 <!-- Search widget-->
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
+                <div class="card mb-4">
                     <div class="card-header">Tìm Kiếm</div>
                     <div class="card-body d-flex justify-content-center align-items-center">
                         <button type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal"
@@ -324,59 +245,9 @@
                 </div>
                 <!-- Categories widget-->
                 <!-- Side widget-->
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Wuthering Waves Trailer</div>
-                    <div class="card-body d-flex justify-content-center align-items-center"><iframe
-                            src="https://www.youtube.com/embed/qOIlyMxRJIc?si=3YSQr4EvMc7oGIHb"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Azur Promilia Trailer</div>
-                    <div class="card-body d-flex justify-content-center align-items-center"><iframe
-                            src="https://www.youtube.com/embed/7bHkAF6jcs0?si=lad-LuJq12_MT--Q"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Arknights: Endfield Trailer</div>
-                    <div class="card-body d-flex justify-content-center align-items-center"><iframe
-                            src="https://www.youtube.com/embed/iWUkSZyjUyM?si=Xiy1-LFq-IRvboqq"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Project Mugen Trailer</div>
-                    <div class="card-body d-flex justify-content-center align-items-center"><iframe
-                            src="https://www.youtube.com/embed/716eb1ruka4?si=FC1FJKaG_dBOarER"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Zenless Zone Zero Trailer</div>
-                    <div class="card-body d-flex justify-content-center align-items-center"><iframe
-                            src="https://www.youtube.com/embed/C5WS9Ohb-fI?si=P0AZHIQTBg5xtJTE"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Tín Năng Ẩn Bạc</div>
-                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
-                        <p>Đã có 0/10 Chìa Khóa Bạc</p>
-                        <button type="button" class="btn btn-outline-primary mx-3">Mở Khóa!</button>
-                    </div>
-                </div>
-                <div class="card mb-4 animate__animated animate__lightSpeedInRight">
-                    <div class="card-header">Tín Năng Ẩn Vàng</div>
-                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
-                        <p>Đã có 0/10 Chìa Khóa Vàng</p>
-                        <button type="button" class="btn btn-outline-primary mx-3">Mở Khóa!</button>
-                    </div>
+                <div class="card mb-4">
+                    <div class="card-header">Test</div>
+                    <div class="card-body">...</div>
                 </div>
             </div>
         </div>
@@ -391,7 +262,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <script src="js/gacha.js"></script>
 </body>
 
 </html>
